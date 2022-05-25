@@ -3,4 +3,4 @@ project(Laba4_var2_Daniil)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Laba4_var2_Daniil main.cpp)
+add_executable(Laba4_var2_Daniil main.cpp error.h file_error.cpp file_error.h)
