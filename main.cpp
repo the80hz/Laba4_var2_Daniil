@@ -1,49 +1,72 @@
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
 int main(){
-    int command = 13;
+    int command = 10;
+    string filename_orig;
     while(true){
         switch(command){
-            case 1: // read the file
+            case 1: { // read the file
+
+                cout << "Enter file name: ";
+                cin >> filename_orig;
+                ifstream file(filename_orig);
+                if(!file) cout << "File does not open";
+                else{
+                    cout << "OK!";
+                }
+
+
+
+                file.close();
+                break;
+            }
+
+            case 2: {// work on the massive
 
                 break;
+            }
 
-            case 2: // work on the massive
-
-                break;
-
-            case 3: // save massive to the file
+            case 3: { // save massive to the file
 
                 break;
+            }
 
-            case 4: // forming new massive (save it?)
-
-                break;
-
-            case 5: // navigation
+            case 4: {// forming new massive (save it?)
 
                 break;
+            }
 
-            case 6: // working on current element (edit? delete?)
-
-                break;
-
-            case 7: // find element
+            case 5: {// navigation
 
                 break;
+            }
 
-            case 8: // add element (to the start? to the end?)
-
-                break;
-
-            case 10: // show menu
+            case 6: {// working on current element (edit? delete?)
 
                 break;
+            }
 
-            case 0:
+            case 7: {// find element
+
+                break;
+            }
+
+            case 8: {// add element (to the start? to the end?)
+
+                break;
+            }
+
+            case 10: {// show menu
+
+                break;
+            }
+
+            case 0: {
                 command = 0;
+            }
 
             default:
                 break;
