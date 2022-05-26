@@ -7,14 +7,14 @@
 
 using namespace std;
 
-void open_file_error::print() const {
+void EOpenFile::print() const {
     cout << "Cannot open file";
 }
 
-void input_file_error::print() const {
+void EInputFile::print() const {
     cout << "Cannot write data";
 }
 
-void output_file_error::print() const {
+void EOutputFile::print() const {
     cout << "Cannot write file";
 }

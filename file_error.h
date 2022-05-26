@@ -7,17 +7,17 @@
 
 #include "error.h"
 
-class open_file_error: public error{
+class EOpenFile: public error{
 public:
     void print() const override;
 };
 
-class input_file_error: public error{
+class EInputFile: public error{
 public:
     void print() const override;
 };
 
-class output_file_error: public error{
+class EOutputFile: public error{
 public:
     void print() const override;
 };
